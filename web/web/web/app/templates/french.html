@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Learn French Online with Chatterwave?</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4d03f, #16a085); /* Gradient background for entire page */
+            color: #333;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .french-section {
+            background-color: white; /* Set background to white for the section */
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: left; /* Align text to left */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        }
+
+        .french-section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .benefits-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .french-benefit {
+            background-color: white; /* White background for benefits */
+            padding: 20px;
+            border-radius: 8px;
+            width: 32%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .french-benefit h3 {
+            color: #0073e6;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .french-benefit p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Styles for the image */
+        .french-benefit img {
+            width: 300px; /* Set width for the image */
+            height: 300px; /* Set height for the image */
+            border-radius: 12px; /* Rounded corners */
+            object-fit: cover; /* Crop the image to fit the box */
+            margin-bottom: 10px; /* Space below the image */
+        }
+
+        @media (max-width: 768px) {
+            .benefits-container {
+                display: block;
+            }
+            .french-benefit {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        .resources-section {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .download-button {
+            background-color: #ff4081;
+            color: #fff;
+            padding: 8px 15px; /* Smaller padding */
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem; /* Smaller font size */
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .flag-icon {
+            width: 20px; /* Smaller flag size */
+            height: auto;
+            margin-left: 5px; /* Space between button and flag */
+        }
+
+        .additional-info {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            background-color: white; /* Set background to white for additional info */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+            margin-top: 20px; /* Increased space above the new sections */
+        }
+
+        .additional-info img {
+            width: 50%; /* Adjust the width for the image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 12px; /* Rounded corners for the image */
+            margin-left: 20px; /* Space between text and image */
+        }
+
+        .french-learning {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white; /* White background for learning info */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+            text-align: left; /* Align text to left */
+        }
+
+        .french-learning h3 {
+            font-size: 22px; /* Make the questions larger */
+            margin-top: 20px; /* Add space above the questions */
+        }
+
+        .faq-section {
+            margin: 20px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            cursor: pointer;
+            color: #0073e6;
+            font-size: 18px;
+            margin: 10px 0;
+            border-bottom: 1px solid #ddd; /* Divider for each question */
+            padding: 10px 0; /* Padding around questions */
+        }
+
+        .faq-answer {
+            margin-left: 20px;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            display: none; /* Initially hidden */
+        }
+
+        .arrow {
+            margin-left: 10px;
+        }
+
+        .faq:hover .faq-question {
+            background-color: rgba(0, 115, 230, 0.1); /* Light hover effect */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="french-section">
+            <h2>Why Learn French Online with Chatterwave?</h2>
+
+            <div class="benefits-container">
+                <div class="french-benefit">
+                    <h3>Comfortable Speaking from Day 1</h3>
+                    <img src="https://www.lingoda.com/wp-content/uploads/2024/03/2024-french-section-why-1-m.png" alt="Speaking Image">
+                    <p>Build your confidence and learn to express yourself easily through conversation, light debate, and role-playing.</p>
+                </div>
+
+                <div class="french-benefit">
+                    <h3>Teachers from All Over the World</h3>
+                    <img src="https://www.lingoda.com/wp-content/uploads/2024/03/2024-french-section-why-2-m.png" alt="Teachers Image">
+                    <p>Through our rotation of international teachers, you’ll be exposed to a wide variety of accents, expressions, and cultures.</p>
+                </div>
+
+                <div class="french-benefit">
+                    <h3>Learning Beyond the Lesson</h3>
+                    <img src="https://www.lingoda.com/wp-content/uploads/2024/03/2024-french-learn-m.png" alt="Learning Image">
+                    <p>Prepare before class or revise what you’ve just learned by quickly accessing the class materials, exercises, and quizzes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="resources-section">
+            <h2>Download Learning Materials</h2>
+            <div class="language-block">
+                <a href="/mnt/data/french (1) (1).pdf" class="download-button" download>Download French Lessons</a>
+                <img src="https://upload.wikimedia.org/wikipedia/fr/c/c3/Flag_of_France.svg" alt="French Flag" class="flag-icon">
+            </div>
+        </div>
+
+        <div class="additional-info">
+            <div class="text">
+                <h3>Learn French for Everyday Situations</h3>
+                <p>Thanks to our section “Au Quotidien”, you’ll learn to speak like someone from France.</p>
+                <p>Our classes will teach you common abbreviations, more familiar expressions, and even some slang! So you can understand locals chatting on the Metro and be able to binge the latest French show on Netflix!</p>
+                <p>Plus, we teach you about more than just the language. Embrace the French culture and discover the many French-speaking countries through our diverse pool of teachers.</p>
+            </div>
+            <img src="https://www.lingoda.com/wp-content/uploads/2024/03/2024-french-learn-m.png" alt="Learn French Image">
+        </div>
+
+        <div class="french-learning">
+            <h3>How to Learn French</h3>
+            <p>If you’d like to learn French, Lingoda is a good place to start. When learning any language, there are two main methods: working with a teacher in a group or individual class, or self-study, using books, online resources, and apps. The more time you invest in learning French, the quicker you will learn the language. There are four main elements to language: listening, speaking, reading, and writing. In order to learn a language well, or to become fluent, it’s a good idea to cover these four bases.</p>
+            <p>Working with a teacher provides a structure for language learning and a step-by-step process. This is particularly useful as a beginner learner, as your teacher will be able to guide you based on your language level and learning style.</p>
+            <p>For self-study, there is a wealth of knowledge online about how to learn French and what resources to use. There are also many language apps that help you to practice things like vocabulary and reading.</p>
+        </div>
+
+        <div class="french-learning">
+            <h3>Is French Hard to Learn?</h3>
+            <p>In general, French is regarded as one of the relatively easier languages for English speakers to learn. Nevertheless, the language can present some challenges, primarily because it’s a Romance language, whereas English is a Germanic language. As a result, there are some fundamental differences in structure and grammar, which can take some time to get used to.</p>
+            <p>When you first start to learn French, it’s perfectly normal to find some grammatical concepts challenging, while pronunciation can also be tough in those early stages. However, with the right effort and some structured online French classes, you’ll be surprised at how quickly you can progress.</p>
+            <p>It’s worth noting that French is a widely spoken language with a huge presence in cinema, literature, and international diplomacy. This means it’s relatively easy to immerse yourself in the French language and culture through various media, from films to podcasts to French music, making the process more enjoyable.</p>
+        </div>
+
+        <div class="french-learning">
+            <h3>How Are the French Online Classes Organized?</h3>
+            <p>When you learn French online with Lingoda, you have the choice of two main ways of learning: the Flex course, which prioritizes flexibility, and the Sprint course, a high-effort, high-reward model that challenges you and helps you make rapid progress.</p>
+            <p>All online French courses are taught by native-level, fully qualified teachers.</p>
+            <p>The Flex course is our most popular option, catering to all learners. You can tailor your language journey to your own needs, with options to adjust the pace of your learning every four weeks. You’ll also have the opportunity to learn in small classes of up to five students or take part in one-on-one private classes.</p>
+            <p>Alternatively, the Lingoda Sprint course is perfect for committed learners wanting to see rapid improvement. Live classes are available 24/7, and you can choose between 15 or 30 classes per month.</p>
+        </div>
+
+<!-- New Transparent Section for Learning Material -->
+<div class="learning-levels">
+    <div class="french-section" style="background-color: rgba(255, 255, 255, 0.8);">
+        <h2>What French Learning Levels are There?</h2>
+        <p>In general, language learners are placed on the Common European Framework of Reference (CEFR) scale, which breaks down proficiency into four levels: A, B, C, and D.</p>
+        <ul class="levels-list">
+            <div>
+                <p>A: Beginner <button id="take-french-quiz-btn">Take Quiz</button></p>
+<script>
+    document.getElementById('take-french-quiz-btn').addEventListener('click', function() {
+        window.location.href = '/getstarted/french/fa/'; // Navigate to fa URL for French
+    });
+
+</script>
+
+
+                <div class="elementary-section">
+                    B: Elementary
+        <button onclick="location.href='{% url 'fb' %}'" class="quiz-button">Take Quiz</button>
+
+    </div>
+                <div class="intermediate-section">
+                    B: Intermediate
+        <button onclick="location.href='{% url 'fc' %}'" class="quiz-button">Take Quiz</button>
+
+    </div>
+                <div class="upper-intermediate-section">
+                    B: Upper-Intermediate
+        <button onclick="location.href='{% url 'fd' %}'" class="quiz-button">Take Quiz</button>
+
+    </div>
+            </div>
+        </ul>
+    </div>
+
+
+
+
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                Is Chatterwave a language learning app? <span class="arrow">▼</span>
+            </div>
+            <div class="faq-answer">Yes! Chatterwave is an online language school that offers live classes with certified, native-speaking teachers.</div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                How long are the lessons? <span class="arrow">▼</span>
+            </div>
+            <div class="faq-answer">Lessons typically last for 60 minutes, but the duration can vary based on the course.</div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                What do I need for online classes? <span class="arrow">▼</span>
+            </div>
+            <div class="faq-answer">All you need is a computer, a stable internet connection, and a video conferencing app.</div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                Are there any resources available? <span class="arrow">▼</span>
+            </div>
+            <div class="faq-answer">Yes! We provide worksheets and other learning materials to help you practice.</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chatterwave. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

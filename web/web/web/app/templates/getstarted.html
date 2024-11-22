@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Language</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #6a0dad 0%, #ff4081 100%);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .language-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            color: #333;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px; /* Limit the max width of the container */
+        }
+
+        .language-container h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .language-container button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%; /* Make the button take full width */
+            max-width: 300px; /* Limit the max width of the buttons */
+        }
+
+        .language-container button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Hide the language options initially */
+        #languageOptions {
+            display: none;
+            margin-top: 20px;
+        }
+
+        /* Style the language buttons to be in order (list-style) */
+        .language-option {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .language-option:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-container">
+        <h2>Select Your Language</h2>
+
+        <!-- Button to show/hide language options -->
+        <button id="selectLanguageButton" onclick="toggleLanguageOptions()">Select Languages</button>
+
+        <!-- Language options (initially hidden) -->
+        <div id="languageOptions">
+            <button class="language-option" onclick="selectLanguage('German')">German</button>
+            <button class="language-option" onclick="selectLanguage('French')">French</button>
+            <button class="language-option" onclick="selectLanguage('English')">English</button>
+            <button class="language-option" onclick="selectLanguage('Spanish')">Spanish</button>
+            <button class="language-option" onclick="selectLanguage('Italian')">Italian</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle the visibility of the language options
+        function toggleLanguageOptions() {
+            var options = document.getElementById('languageOptions');
+            var selectBtn = document.getElementById('selectLanguageButton');
+
+            // Show the language options and hide the "Select Languages" button
+            options.style.display = 'block';
+            selectBtn.style.display = 'none';
+        }
+
+        // Function to handle language selection
+        function selectLanguage(language) {
+            if (language === 'German') {
+                // Redirect to the German page (Django URL)
+                window.location.href = '/getstarted/german/';
+            } else if (language === 'French') {
+                // Redirect to the French page (Django URL)
+                window.location.href = '/getstarted/french/';
+            } else if (language === 'English') {
+                // Redirect to the English page (Django URL)
+                window.location.href = '/getstarted/english/';
+            } else if (language === 'Spanish') {
+                // Redirect to the Spanish page (Django URL)
+                window.location.href = '/getstarted/spanish/';
+            } else if (language === 'Italian') {
+                // Redirect to the Italian page (Django URL)
+                window.location.href = '/getstarted/italian/';
+            } else {
+                alert("You have selected " + language + " language.");
+            }
+        }
+    </script>
+</body>
+</html>

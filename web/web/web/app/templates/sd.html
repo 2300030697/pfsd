@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Language Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #000000, #434343); /* Gradient black background */
+            color: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            display: none; /* Hide all questions initially */
+            margin-bottom: 20px;
+            background-color: #7d7d7d; /* Grey question section */
+            padding: 20px; /* Increased padding */
+            border-radius: 10px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin: 10px 0;
+        }
+        .next-btn, .submit-btn {
+            display: none; /* Hide buttons initially */
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Spanish Language Quiz</h1>
+<form id="quiz-form">
+    <div class="question" id="question1">
+        <h3>1. What is the Spanish translation for "I would have preferred to go to the concert?"</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q1" value="a"> a) Me habría preferido ir al concierto.</label></li>
+            <li><label><input type="radio" name="q1" value="b"> b) Prefiero ir al concierto.</label></li>
+            <li><label><input type="radio" name="q1" value="c"> c) Voy al concierto.</label></li>
+            <li><label><input type="radio" name="q1" value="d"> d) Quería ir al concierto.</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question2">
+        <h3>2. How do you say "Despite the bad weather, we decided to hike" in Spanish?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q2" value="a"> a) A pesar del mal tiempo, decidimos hacer una caminata.</label></li>
+            <li><label><input type="radio" name="q2" value="b"> b) Debido al mal tiempo, fuimos a hacer una caminata.</label></li>
+            <li><label><input type="radio" name="q2" value="c"> c) Decidimos no hacer una caminata.</label></li>
+            <li><label><input type="radio" name="q2" value="d"> d) Fuimos debido al mal tiempo.</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question3">
+        <h3>3. What is the Spanish word for "sustainable development"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q3" value="a"> a) Desarrollo sostenible</label></li>
+            <li><label><input type="radio" name="q3" value="b"> b) Protección del medio ambiente</label></li>
+            <li><label><input type="radio" name="q3" value="c"> c) Protección de los recursos</label></li>
+            <li><label><input type="radio" name="q3" value="d"> d) Cambio climático</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question4">
+        <h3>4. How do you say "I am looking forward to meeting you" in Spanish?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q4" value="a"> a) Estoy deseando conocerte.</label></li>
+            <li><label><input type="radio" name="q4" value="b"> b) Estoy curioso de conocerte.</label></li>
+            <li><label><input type="radio" name="q4" value="c"> c) Estoy feliz de conocerte.</label></li>
+            <li><label><input type="radio" name="q4" value="d"> d) Espero conocerte.</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question5">
+        <h3>5. What is the Spanish phrase for "to be in charge of something"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q5" value="a"> a) Estar a cargo de algo</label></li>
+            <li><label><input type="radio" name="q5" value="b"> b) Cuidar de algo</label></li>
+            <li><label><input type="radio" name="q5" value="c"> c) Por algo</label></li>
+            <li><label><input type="radio" name="q5" value="d"> d) Llevar a cabo algo</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question6">
+        <h3>6. How do you say "I find it difficult to express my thoughts clearly" in Spanish?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q6" value="a"> a) Encuentro difícil expresar mis pensamientos con claridad.</label></li>
+            <li><label><input type="radio" name="q6" value="b"> b) Tengo dificultad para hablar con claridad.</label></li>
+            <li><label><input type="radio" name="q6" value="c"> c) Me es difícil pensar con claridad.</label></li>
+            <li><label><input type="radio" name="q6" value="d"> d) No puedo expresar mis pensamientos.</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question7">
+        <h3>7. What is the Spanish term for "to get involved in something"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q7" value="a"> a) Involucrarse en algo</label></li>
+            <li><label><input type="radio" name="q7" value="b"> b) Intervenir en algo</label></li>
+            <li><label><input type="radio" name="q7" value="c"> c) Apoyar algo</label></li>
+            <li><label><input type="radio" name="q7" value="d"> d) Tomar algo</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question8">
+        <h3>8. How do you say "This book deals with environmental issues" in Spanish?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q8" value="a"> a) Este libro trata sobre cuestiones ambientales.</label></li>
+            <li><label><input type="radio" name="q8" value="b"> b) Este libro habla del medio ambiente.</label></li>
+            <li><label><input type="radio" name="q8" value="c"> c) Este libro es sobre problemas ambientales.</label></li>
+            <li><label><input type="radio" name="q8" value="d"> d) Este libro cuenta sobre cuestiones ambientales.</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question9">
+        <h3>9. What is the Spanish word for "to improve"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q9" value="a"> a) Mejorar</label></li>
+            <li><label><input type="radio" name="q9" value="b"> b) Aumentar</label></li>
+            <li><label><input type="radio" name="q9" value="c"> c) Crecer</label></li>
+            <li><label><input type="radio" name="q9" value="d"> d) Potenciar</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question10">
+        <h3>10. How do you say "I can't wait to travel again" in Spanish?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q10" value="a"> a) No puedo esperar para viajar de nuevo.</label></li>
+            <li><label><input type="radio" name="q10" value="b"> b) Estoy ansioso por viajar de nuevo.</label></li>
+            <li><label><input type="radio" name="q10" value="c"> c) Espero viajar de nuevo.</label></li>
+            <li><label><input type="radio" name="q10" value="d"> d) Tengo ganas de viajar de nuevo.</label></li>
+        </ul>
+    </div>
+
+    <button type="button" class="next-btn" id="next-btn">Next Question</button>
+    <button type="button" class="submit-btn" id="submit-btn">Submit</button>
+    <div class="result" id="result"></div>
+</form>
+
+<script>
+    let currentQuestion = 0;
+    const questions = document.querySelectorAll('.question');
+    const nextBtn = document.getElementById('next-btn');
+    const submitBtn = document.getElementById('submit-btn');
+    const resultDiv = document.getElementById('result');
+
+    function showQuestion(index) {
+        questions.forEach((question, i) => {
+            question.style.display = (i === index) ? 'block' : 'none';
+        });
+        nextBtn.style.display = (index < questions.length - 1) ? 'block' : 'none';
+        submitBtn.style.display = (index === questions.length - 1) ? 'block' : 'none';
+    }
+
+    nextBtn.addEventListener('click', () => {
+        if (currentQuestion < questions.length - 1) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+        }
+    });
+
+    submitBtn.addEventListener('click', () => {
+        let score = 0;
+        const correctAnswers = ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'];
+
+        questions.forEach((question, index) => {
+            const selectedOption = question.querySelector(`input[name="q${index + 1}"]:checked`);
+            if (selectedOption && selectedOption.value === correctAnswers[index]) {
+                score++;
+            }
+        });
+
+        resultDiv.textContent = `You scored ${score} out of ${questions.length}.`;
+        resultDiv.style.display = 'block';
+        nextBtn.style.display = 'none';
+        submitBtn.style.display = 'none';
+    });
+
+    showQuestion(currentQuestion); // Show the first question
+</script>
+
+</body>
+</html>

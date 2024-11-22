@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Language Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #000000, #434343); /* Gradient black background */
+            color: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            display: none; /* Hide all questions initially */
+            margin-bottom: 20px;
+            background-color: #7d7d7d; /* Grey question section */
+            padding: 20px; /* Increased padding */
+            border-radius: 10px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin: 10px 0;
+        }
+        .submit-btn {
+            display: none; /* Hide submit button initially */
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Italian Language Quiz</h1>
+<form id="quiz-form">
+    <div class="question" id="question1">
+        <h3>1. What is the Italian word for "hello"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q1" value="a"> a) Ciao</label></li>
+            <li><label><input type="radio" name="q1" value="b"> b) Addio</label></li>
+            <li><label><input type="radio" name="q1" value="c"> c) Grazie</label></li>
+            <li><label><input type="radio" name="q1" value="d"> d) Per favore</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question2">
+        <h3>2. What is the Italian word for "thank you"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q2" value="a"> a) Grazie</label></li>
+            <li><label><input type="radio" name="q2" value="b"> b) Per favore</label></li>
+            <li><label><input type="radio" name="q2" value="c"> c) Sì</label></li>
+            <li><label><input type="radio" name="q2" value="d"> d) No</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question3">
+        <h3>3. What is the Italian word for "goodbye"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q3" value="a"> a) Addio</label></li>
+            <li><label><input type="radio" name="q3" value="b"> b) A presto</label></li>
+            <li><label><input type="radio" name="q3" value="c"> c) Ciao</label></li>
+            <li><label><input type="radio" name="q3" value="d"> d) Buona notte</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question4">
+        <h3>4. What is the Italian word for "yes"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q4" value="a"> a) Sì</label></li>
+            <li><label><input type="radio" name="q4" value="b"> b) No</label></li>
+            <li><label><input type="radio" name="q4" value="c"> c) Forse</label></li>
+            <li><label><input type="radio" name="q4" value="d"> d) Tutti</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question5">
+        <h3>5. What is the Italian phrase for "good morning"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q5" value="a"> a) Buona sera</label></li>
+            <li><label><input type="radio" name="q5" value="b"> b) Buongiorno</label></li>
+            <li><label><input type="radio" name="q5" value="c"> c) Buona notte</label></li>
+            <li><label><input type="radio" name="q5" value="d"> d) Ciao</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question6">
+        <h3>6. What is the Italian word for "please"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q6" value="a"> a) Per favore</label></li>
+            <li><label><input type="radio" name="q6" value="b"> b) Grazie</label></li>
+            <li><label><input type="radio" name="q6" value="c"> c) Scusi</label></li>
+            <li><label><input type="radio" name="q6" value="d"> d) Ciao</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question7">
+        <h3>7. What is the Italian phrase for "good night"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q7" value="a"> a) Buona notte</label></li>
+            <li><label><input type="radio" name="q7" value="b"> b) Ciao</label></li>
+            <li><label><input type="radio" name="q7" value="c"> c) Buon giorno</label></li>
+            <li><label><input type="radio" name="q7" value="d"> d) Addio</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question8">
+        <h3>8. What is the Italian phrase for "I don't understand"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q8" value="a"> a) Non capisco</label></li>
+            <li><label><input type="radio" name="q8" value="b"> b) Non ho idea</label></li>
+            <li><label><input type="radio" name="q8" value="c"> c) Che cos'è?</label></li>
+            <li><label><input type="radio" name="q8" value="d"> d) Non so</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question9">
+        <h3>9. What is the Italian word for "water"?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q9" value="a"> a) Vino</label></li>
+            <li><label><input type="radio" name="q9" value="b"> b) Acqua</label></li>
+            <li><label><input type="radio" name="q9" value="c"> c) Birra</label></li>
+            <li><label><input type="radio" name="q9" value="d"> d) Succo</label></li>
+        </ul>
+    </div>
+
+    <div class="question" id="question10">
+        <h3>10. What is the Italian word for "goodbye" (formal)?</h3>
+        <ul class="options">
+            <li><label><input type="radio" name="q10" value="a"> a) Addio</label></li>
+            <li><label><input type="radio" name="q10" value="b"> b) A presto</label></li>
+            <li><label><input type="radio" name="q10" value="c"> c) Ciao</label></li>
+            <li><label><input type="radio" name="q10" value="d"> d) Buona notte</label></li>
+        </ul>
+    </div>
+
+    <button type="button" id="next-btn">Next</button>
+    <button type="submit" class="submit-btn">Submit</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<script>
+    let currentQuestion = 0;
+    const questions = document.querySelectorAll('.question');
+    const nextButton = document.getElementById('next-btn');
+    const submitButton = document.querySelector('.submit-btn');
+    const resultDiv = document.getElementById('result');
+
+    function showQuestion(index) {
+        questions.forEach((question, i) => {
+            question.style.display = i === index ? 'block' : 'none';
+        });
+        nextButton.style.display = index < questions.length - 1 ? 'inline-block' : 'none';
+        submitButton.style.display = index === questions.length - 1 ? 'inline-block' : 'none';
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentQuestion++;
+        showQuestion(currentQuestion);
+    });
+
+    document.getElementById('quiz-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const answers = [
+            'a', // Correct answer for question 1
+            'a', // Correct answer for question 2
+            'a', // Correct answer for question 3
+            'a', // Correct answer for question 4
+            'b', // Correct answer for question 5
+            'a', // Correct answer for question 6
+            'a', // Correct answer for question 7
+            'a', // Correct answer for question 8
+            'b', // Correct answer for question 9
+            'a'  // Correct answer for question 10
+        ];
+        let score = 0;
+        answers.forEach((answer, index) => {
+            const selectedAnswer = document.querySelector(`input[name="q${index + 1}"]:checked`);
+            if (selectedAnswer && selectedAnswer.value === answer) {
+                score++;
+            }
+        });
+        resultDiv.textContent = `Your score: ${score} out of ${questions.length}`;
+        resultDiv.style.display = 'block';
+    });
+
+    showQuestion(currentQuestion);
+</script>
+
+</body>
+</html>
